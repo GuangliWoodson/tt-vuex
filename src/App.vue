@@ -1,28 +1,20 @@
 <template>
+  <!-- app.vue是根组件 -->
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Categtory />
+    <NewList />
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Categtory from './components/categtory'
+import NewList from './components/new-list'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    Categtory,
+    NewList,
+}
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
